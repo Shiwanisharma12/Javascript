@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+    function fn1()
+    {
+        var rd1= document.getElementById("rd1");
+        var rd2=document.getElementById("rd2");
+        if(rd1.checked== true)
+        {
+            alert("Successive is checked");
+
+        }
+        if(rd2.checked== true){
+            alert("Technology is checked");
+        }
+        else{
+            alert("Please check atleast once");
+        }
+       
+    }
+
+        </script>
+    </head>
+    <body>
+        <input  id="rd1" name="grp1" type="radio" value="successive">Successive</input>
+        <br>
+        <input id="rd2" name="grp1"  type="radio" value="technologies">Technologies</input>
+        <br>
+        <button id="button1" onclick="fn1()">click here</button>
+        
+    </body>
+    </body>
+</html>

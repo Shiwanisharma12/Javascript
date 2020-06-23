@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Leaarning objects program</title>
+
+        <script type="text/javascript">
+
+         
+        
+         function test(name,degree,college)
+           {
+                this.name=name;
+                this.degree=degree;
+                this.college= college;
+
+                this.testing = function()
+                {
+                    document.write("<h2>FUNCTION MADE SUCCESSFULLY</h2>");
+                }
+           }
+
+           var  A = new test("<H2> shiwani","Btech","RKGIT</H2>");
+           document.write(A.college);
+           document.write(A.name);
+           document.write(A.degree);
+           A.testing();
+
+           var Str1= new String();
+           document.write(typeof("<h2>"+(Str1)+"</h2>"));
+           document.write(typeof(Str1));
+
+         // Adding more method in object
+         A.newFn=function()
+         {
+             document.write("<h2>new function has been added</h2>");
+         }
+         A.newFn();
+
+         //deleting any property
+        // delete A.degree;
+         document.write("<H2>"+A.degree+"</H2>");
+
+         //CHANGE DATATYPE
+         A.name=4000;
+         document.write(name);
+         document.write(typeof(A.name));//output will be integer and earlier it was string
+
+        </script> 
+    </head>
+</html>
