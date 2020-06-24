@@ -1,0 +1,26 @@
+<html>
+    <title>Dropdown</title>
+    <script type = "text/javascript">
+
+function fn1()
+{
+    var x = document.getElementById("testprocess");
+    alert(x.options[x.selectedIndex].value);
+}
+   
+
+    </script>
+    <head>
+        <body>
+            <select name="Testing process" id="testprocess">
+                <option value="Integration testing">Integration testing</option>
+                <option value="U.I testing">U.I testing</option>
+                <option value="System testing">System testing</option>
+                <option value="Regression testing">Regression testing</option>
+            </select>
+            <br>
+             <button id = "button" onclick="fn1()">click here</button>
+              
+        </body>
+    </head>
+</html>

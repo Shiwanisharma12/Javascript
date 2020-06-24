@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+<title>Mous hover and out</title>
+    <script type="text/javascript">
+
+function setnewImage()
+{
+   document.getElementById("img1").src="file:///C:/Users/shivanis/Downloads/noddy.jpg";
+
+}
+function setOldimage()
+{
+    document.getElementById("img1").src="file:///C:/Users/shivanis/Downloads/logo.jpg"
+
+}
+
+    </script>
+    </head>
+    <body>
+        
+       <img id="img1" onmouseover ="setnewImage()" onmouseout="setOldimage()"src="file:///C:/Users/shivanis/Downloads/logo.jpg">
+
+
+        <button >click here</button>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!-- there is a unique i.d for every element ,no matter elements belongs to same type.in case of class, multiple elements can have same classname -->
+<html>
+    <head>
+<title>Access by classname</title>
+    <script type="text/javascript">
+function changestyling()
+{
+    var x= document.getElementsByClassName("paragraph");
+    for( var i=0;i<=x.length;i++)
+    {
+        x[i].style.color="red";
+    }
+}
+
+    </script>
+    </head>
+    <body>
+        
+        <p class="paragraph">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+        <p  class="paragraph">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</p>
+        <p>DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+        <p>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
+        <p  class="paragraph">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</p>
+        <p>GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</p>
+
+        <button onclick="changestyling()"> click here</button>
+    </body>
+</html>

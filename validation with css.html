@@ -1,0 +1,61 @@
+<html>
+        <title>
+            form valiations with css
+        </title>
+        <script type="text/javascript">
+        function validate()
+        {
+         var usernames= document.getElementById("username");
+         var passwords= document.getElementById("Password");
+         if(username.value.trim()=="")
+         {
+            // alert("please fill both the fields");
+            usernames.style.border = "solid 3px red";
+            document.getElementById("uname").style.visibility="visible";
+            return false;
+         }
+        else if (passwords.value.trim()=="")
+         {
+            //  alert("password should follow the format");
+            passwords.style.border = "solid 3px red";
+            document.getElementById("pword").style.visibility="visible";
+           
+             return false;
+
+         }
+         else if(passwords.value.length<=6)
+         {
+            passwords.style.border = "solid 3px red";
+            document.getElementById("pword").style.visibility="visible";
+            return false;
+         }
+        //  else if(usernames.value==""||passwords.value=="")
+        //  {
+        //         return false;
+        //  }
+         else 
+         {
+             return true;
+
+         }
+        }
+        </script>
+        <head>
+        <body>
+            <form onsubmit= "return validate()" action="message.html">
+         <input id="username" placeholder = "username"type="text/javascript">
+         <label id="uname" style="color:red;visibility:hidden;">Invalid</label>
+         <br><br>
+         <input id="Password" placeholder = "password"type="password"><br><br>
+         <label id="pword" style="color: red;visibility: hidden;">does not follow format</label>
+         <button type="submit">SUBMIT</button>
+    
+
+
+         
+
+
+            </form>
+        </body>
+    </head>
+</html>

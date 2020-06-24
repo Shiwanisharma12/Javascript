@@ -1,0 +1,39 @@
+
+<html>
+<!-- when we want to access alot of html elements ,instead of using every element separately by its i.d and make program lengthy, we can use tagname to access all together. --> --> -->
+
+    <script type= "text/javascript">
+
+    function changestyling()
+    {
+ 
+    var x= document.getElementsByTagName("p");
+    x[0].style.fontSize=25;
+    x[1].style.color="green";
+    x[2].style.fontWeight="BOLD";
+       for(var i =3;i<=5;i++)
+    {
+        x[i].style.color="red";
+
+    }
+
+
+
+         
+    }
+    </script>
+    <head>
+        <body>
+            
+            <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+            <p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+            <p>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</p>
+            <p>DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+            <p>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
+            <p>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</p>
+            <p>GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</p>
+
+            <button onclick="changestyling()"> click here</button>
+        </body>
+    </head>
+</html>
