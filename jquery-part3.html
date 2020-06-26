@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JQUERY PART2</title>
+        <link rel="stylesheet" href="C:\Users\shivanis\javascript\CSS\style.css">
+
+        <body>
+            <div id="firstdiv" class="Mydiv">
+                <p>This is para 1 of div1</p>
+                <p>This is para 2 of div1</p>
+            </div>
+            <div id="Seconddiv" class="Mydiv">
+                <p> This is para 1 of div2</p>
+                <p> This is para 2 of div2</p>
+            </div>
+            <div id="Thirddiv" class="Mydiv">
+                <p>This is para 1 of div 3</p>
+                <p>This is para 2 of div3</p>
+             </div>  
+             <button onclick="fn1()">click here</button>  
+
+             <script src="file:///C:/Users/shivanis/javascript/jquery%20library/js-library.js"></script>
+             <script>
+                 function fn1()
+                 {
+                   //   $("h2").fadeToggle();
+                    //  $(".same").fadeToggle();
+                    // If we want to fade out only 2 paragraphs
+                    // $("#firstdiv,#Seconddiv").fadeToggle(3000);
+                    //If we want to clear paragraps of all div
+                    // $("p").fadeToggle(1000);
+                    //If user want to reove para of one div
+                    // $("#firstdiv,p").fadeToggle(2000);
+                    $("#div,p").fadeToggle(2000);
+
+       
+                  }
+             </script>
+                </body>
+    </head>
+</html>

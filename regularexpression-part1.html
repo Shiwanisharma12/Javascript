@@ -1,53 +1,34 @@
 <html>
+    <head>
         <title>
             form valiations with css
         </title>
         <script type="text/javascript">
         function validate()
         {
-         var usernames= document.getElementById("username").value;
-         var passwords= document.getElementById("Password");
-
-         var regx= "/successive/;"
-
-         if(regx.test(usernames))
-         {
-             alert("username contains successive");
-         }
-         else 
-         {
-             alert("username doesnot contain successive");
-         }
-        
-        
-            var regx=/ST/;
-            if(regx.test(usernames))
+           var user=document.getElementById("username").value;
+           var regx=/E500/i; 
+            if(regx.test(username))
             {
-                alert("valid username");
+                alert("regx true")
             }
-            else 
-            {
-                alert("Invalid username");
-    
+            else{
+                alert("Invalid");
+                document.getElementById("uname").style.visibility="visible";
+            }
+
+
         }
-    }
+         
         </script>
-        <head>
+        </head>
+       
         <body>
-            <form onsubmit= "return validate()" action="message.html">
+        
          <input id="username" placeholder = "username"type="text/javascript">
          <label id="uname" style="color:red;visibility:hidden;">Invalid</label>
          <br><br>
-         <input id="Password" placeholder = "password"type="password"><br><br>
-         <label id="pword" style="color: red;visibility: hidden;">does not follow format</label>
-         <button type="submit">SUBMIT</button>
-    
-
-
-         
-
-
-            </form>
+         <button onclick ="validate()"="button">SUBMIT</button>
+         </form>
         </body>
-    </head>
 </html>
